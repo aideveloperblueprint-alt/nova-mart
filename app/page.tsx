@@ -89,7 +89,7 @@ export default function Home() {
       <section id="categories" className="container py-12 sm:py-16">
         <div className="mb-7 flex items-end justify-between gap-4"><div><p className="section-kicker">Find your next favourite</p><h2 className="mt-2 text-2xl font-black tracking-tight text-[#102a43] sm:text-3xl">Shop by category</h2><p className="mt-2 text-sm text-slate-500">A little bit of everything, thoughtfully organised.</p></div><a href="#" className="hidden items-center gap-1 text-xs font-bold text-[#b85d0b] sm:flex">View all <ArrowRight size={15}/></a></div>
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
-          {categories.map(({name,detail,icon:Icon})=><a href="#" key={name} className="category-card"><span className="category-icon"><Icon size={23}/></span><strong className="block text-[12px] leading-4 text-[#102a43]">{name}</strong><span className="mt-1 block text-[10px] text-slate-500">{detail}</span></a>)}
+          {categoryItems.map(({name,detail,icon:Icon})=><a href="#" key={name} className="category-card"><span className="category-icon"><Icon size={23}/></span><strong className="block text-[12px] leading-4 text-[#102a43]">{name}</strong><span className="mt-1 block text-[10px] text-slate-500">{detail}</span></a>)}
         </div>
       </section>
 
