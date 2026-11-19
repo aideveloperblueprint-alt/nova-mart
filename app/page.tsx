@@ -40,8 +40,10 @@ export default async function Home() {
     "home-furniture": Sofa,
     "beauty-personal-care": Sparkles,
   };
-  const categoryItems = liveCategories?.length
-    ? liveCategories.map((category) => ({
+  // Supabase currently infers this generated table result as never[]; narrow the selected fields explicitly.
+  const categoryRows = liveCategories as unknown as Array<{ name: string; slug: string }> | null;
+  const categoryItems = categoryRows?.length
+    ? categoryRows.map((category) => ({
         name: category.name,
         detail: "Explore the collection",
         icon: categoryIcons[category.slug] ?? ShoppingBag,
