@@ -56,7 +56,7 @@ export default async function Home() {
         <div className="container flex min-h-9 items-center justify-between gap-3">
           <p className="hidden sm:block">Your marketplace for the things that move you.</p>
           <p className="mx-auto sm:mx-0">Free delivery on selected orders <span className="font-bold text-orange-300">· Shop the offers</span></p>
-          <p className="hidden sm:block">Need help? <span className="font-semibold text-white">We're here for you</span></p>
+          <p className="hidden sm:block">Need help? <span className="font-semibold text-white">We&apos;re here for you</span></p>
         </div>
       </div>
 
@@ -82,7 +82,7 @@ export default async function Home() {
         <nav className="hidden border-t border-slate-100 md:block">
           <div className="container flex items-center gap-7 py-3 text-[12px] font-semibold text-slate-600">
             <a href="#categories" className="flex items-center gap-1 text-[#102a43]">Shop by category <ChevronDown size={14}/></a>
-            <a href="#deals" className="hover:text-[#b85d0b]">Today's deals</a>
+            <a href="#deals" className="hover:text-[#b85d0b]">Today&apos;s deals</a>
             <a href="#featured" className="hover:text-[#b85d0b]">Featured products</a>
             <a href="#vendors" className="hover:text-[#b85d0b]">Top stores</a>
             <a href="#sell" className="ml-auto text-[#b85d0b]">Sell on Nova Mart <ArrowRight size={14} className="ml-1 inline"/></a>
@@ -121,7 +121,7 @@ export default async function Home() {
 
       <section id="deals" className="bg-[#fff8f0] py-11 sm:py-14">
         <div className="container">
-          <div className="mb-7 flex items-end justify-between gap-4"><div><p className="section-kicker">Don't miss out</p><h2 className="mt-2 text-2xl font-black tracking-tight text-[#102a43] sm:text-3xl">Deals worth discovering</h2><p className="mt-2 text-sm text-slate-500">A few good reasons to treat yourself today.</p></div><a href="#" className="hidden items-center gap-1 text-xs font-bold text-[#b85d0b] sm:flex">See all deals <ArrowRight size={15}/></a></div>
+          <div className="mb-7 flex items-end justify-between gap-4"><div><p className="section-kicker">Don&apos;t miss out</p><h2 className="mt-2 text-2xl font-black tracking-tight text-[#102a43] sm:text-3xl">Deals worth discovering</h2><p className="mt-2 text-sm text-slate-500">A few good reasons to treat yourself today.</p></div><a href="#" className="hidden items-center gap-1 text-xs font-bold text-[#b85d0b] sm:flex">See all deals <ArrowRight size={15}/></a></div>
           <div className="grid gap-4 md:grid-cols-2">
             <div className="flex min-h-[190px] items-center justify-between overflow-hidden rounded-2xl bg-[#102a43] p-6 text-white"><div className="max-w-[230px]"><span className="text-[10px] font-extrabold tracking-[.16em] text-orange-300">FASHION FINDS</span><h3 className="mt-2 text-2xl font-black">Refresh your<br/>everyday look.</h3><p className="mt-2 text-xs text-slate-300">New-season styles, fresh possibilities.</p><a href="#" className="mt-4 inline-flex items-center gap-2 text-xs font-bold text-orange-300">Explore fashion <ArrowRight size={14}/></a></div><div className="h-36 w-32 rounded-xl bg-cover bg-center" style={{backgroundImage:`url("${imageUrl("photo-1483985988355-763728e1935b")}")`}}/></div>
             <div className="flex min-h-[190px] items-center justify-between overflow-hidden rounded-2xl bg-[#f4e8dc] p-6 text-[#102a43]"><div className="max-w-[230px]"><span className="text-[10px] font-extrabold tracking-[.16em] text-[#a95000]">TECH MADE SIMPLE</span><h3 className="mt-2 text-2xl font-black">Upgrade your<br/>everyday tech.</h3><p className="mt-2 text-xs text-slate-600">Smart picks for work, play and everything between.</p><a href="#" className="mt-4 inline-flex items-center gap-2 text-xs font-bold text-[#a95000]">Explore electronics <ArrowRight size={14}/></a></div><div className="h-36 w-32 rounded-xl bg-cover bg-center" style={{backgroundImage:`url("${imageUrl("photo-1498049794561-7780e7231661")}")`}}/></div>
