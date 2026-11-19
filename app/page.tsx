@@ -1,8 +1,8 @@
 import {
-  ArrowRight, BadgePercent, CheckCircle2, ChevronDown, Headphones,
-  Heart, Laptop, Menu, PackageCheck, Search, ShieldCheck, ShoppingBag,
+  ArrowRight, BadgePercent, ChevronDown, Headphones,
+  Heart, Laptop, Menu, Search, ShieldCheck, ShoppingBag,
   ShoppingCart, Smartphone, Sparkles, Star, Truck, UserRound, Watch,
-  Shirt, Sofa, Gift, Zap
+  Shirt, Sofa, Gift
 } from "lucide-react";
 
 const categories = [
@@ -16,7 +16,7 @@ const categories = [
 
 const products = [
   { name: "Everyday Classic Sneakers", vendor: "Urban Sole", price: "₦38,500", old: "₦49,000", rating: "4.8", badge: "BESTSELLER", image: "photo-1542291026-7eec264c27ff" },
-  { name: "Wireless Noise-Cancelling Headphones", vendor: "SoundHaus", price: "₦72,000", old: "₦89,000", rating: "4.7", badge: "HOT DEAL", image: "photo-150 Use" },
+  { name: "Wireless Noise-Cancelling Headphones", vendor: "SoundHaus", price: "₦72,000", old: "₦89,000", rating: "4.7", badge: "HOT DEAL", image: "photo-1505740420928-5e560c06d30e" },
   { name: "Minimal Everyday Wristwatch", vendor: "Time & Co.", price: "₦26,900", old: "", rating: "4.6", badge: "NEW ARRIVAL", image: "photo-1523275335684-37898b6baf30" },
   { name: "Premium Skincare Essentials Set", vendor: "Glow District", price: "₦19,500", old: "₦24,000", rating: "4.9", badge: "TOP RATED", image: "photo-1608248543803-ba4f8c70ae0b" },
 ];
