@@ -1,3 +1,4 @@
+import { createClient } from "@/lib/supabase/server";
 import {
   ArrowRight, BadgePercent, ChevronDown, Headphones,
   Heart, Laptop, Menu, Search, ShieldCheck, ShoppingBag,
@@ -23,7 +24,30 @@ const products = [
 
 const imageUrl = (id: string) => `https://images.unsplash.com/${id}?auto=format&fit=crop&w=900&q=85`;
 
-export default function Home() {
+export default async function Home() {
+  const supabase = await createClient();
+  const { data: liveCategories } = await supabase
+    .from("categories")
+    .select("id, name, slug")
+    .eq("is_active", true)
+    .order("sort_order", { ascending: true });
+
+  const categoryIcons: Record<string, typeof Shirt> = {
+    "fashion-clothing": Shirt,
+    "electronics-gadgets": Watch,
+    "phones-accessories": Smartphone,
+    "computers-laptops": Laptop,
+    "home-furniture": Sofa,
+    "beauty-personal-care": Sparkles,
+  };
+  const categoryItems = liveCategories?.length
+    ? liveCategories.map((category) => ({
+        name: category.name,
+        detail: "Explore the collection",
+        icon: categoryIcons[category.slug] ?? ShoppingBag,
+      }))
+    : categories;
+
   return (
     <main>
       <div className="top-strip">
