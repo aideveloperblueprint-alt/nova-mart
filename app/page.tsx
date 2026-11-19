@@ -73,7 +73,7 @@ export default async function Home() {
             <button className="rounded-md bg-[#102a43] px-4 py-2 text-xs font-bold text-white">Search</button>
           </div>
           <div className="ml-auto flex items-center gap-4 text-[#102a43]">
-            <a href="#" className="hidden items-center gap-2 text-xs font-semibold sm:flex"><UserRound size={19}/> <span>Account</span></a>
+            <a href="/account" className="hidden items-center gap-2 text-xs font-semibold sm:flex"><UserRound size={19}/> <span>Account</span></a>
             <a href="#" className="relative hidden sm:block" aria-label="Wishlist"><Heart size={21}/><span className="absolute -right-2 -top-2 grid h-4 w-4 place-items-center rounded-full bg-[#ff9f43] text-[9px] font-bold">0</span></a>
             <a href="#" className="relative" aria-label="Shopping cart"><ShoppingCart size={22}/><span className="absolute -right-2 -top-2 grid h-4 w-4 place-items-center rounded-full bg-[#ff9f43] text-[9px] font-bold">0</span></a>
           </div>
